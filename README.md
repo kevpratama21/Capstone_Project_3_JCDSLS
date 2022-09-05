@@ -68,9 +68,47 @@ Evaluasi metrik yang akan digunakan yaitu:
 - Distribution
 - Descriptive Statistics
 - Correlation
+<br>
 
 ## **3. Data Preprocessing**
 ---
-- Distribution
-- Descriptive Statistics
-- Correlation
+- Cek Feature, Unique Value, dan Missing Value
+- Handling Outlier
+<br>
+
+## **4. Modeling**
+---
+- Encoding
+- Splitting Data
+- Choose Bechmark Model
+- Hyperparameter Tuning
+- Predict Test dataset 
+<br>
+
+## **5. Conclusion**
+---
+Model terbaik yang dipilih untuk memprediksi CLV adalah XGBoost. Metrik evaluasi yang digunakan pada model adalah nilai RMSE, MAE, MAPE, dan R-squared. Jika ditinjau dari nilai MAPE yang dihasilkan oleh model setelah dilakukan hyperparameter tuning, yaitu sekitar 4%, kita dapat menyimpulkan bahwa bila nanti model yang kita buat ini digunakan untuk memprediksi Customer Lifetime Value pada rentang nilai seperti yang dilatih terhadap model, maka hasil prediksi CLVnya rata-rata dapat meleset kurang lebih sekitar 4% dari CLV yang seharusnya.
+
+Tetapi, tidak menutup kemungkinan juga prediksinya meleset lebih jauh karena bias yang dihasilkan model masih cukup tinggi. Bila dilihat dari visualisasi antara CLV aktual dan prediksi serta residual performa prediksi model mulai menurun ketika CLV sekitar 8.000 keatas. Bias yang dihasilkan oleh model ini dikarenakan oleh terbatasnya fitur pada dataset yang bisa merepresentasikan aspek customer dan juga polis asuransi mereka.
+
+Beberapa limitasi model yang tercipta karena adanya rentang nilai yang dipakai untuk train model ini yaitu:
+- Nilai Customer Lifetime Value maksimal 16646.5203465
+- Nilai Total Claim Amount maksimal 974.566507
+- Nilai Monthly Premium Auto maksimal 163
+
+Berdasarkan pemodelan yang sudah dilakukan, fitur 'Number of Policies', 'Monthly Premium Auto', dan 'Vehicle Class' menjadi fitur yang paling berpengaruh terhadap target 'Customer Lifetime Value'.
+Hal tersebut dapat menjawab bussiness problem mengenai apa saja aspek yang mempengaruhi CLV customer.
+Dengan mengetahui fitur apa saja yang mempengaruhi CLV customer maka perusahaan dapat memfokuskan usaha marketingnya terhadap ketiga aspek tersebut untuk dapat meningkatkan profit perusahaan. 
+
+Berdasarkan pemodelan yang sudah dilakukan, perusahaan memiliki tool untuk memprediksi nilai Customer Lifetime Value.
+Dengan dapat diprediksinya CLV maka dapat membantu bussiness problem mengenai perhitungan biaya maksimal untuk akuisisi customer. Perusahaan dapat mengatur agar biaya akuisisi tidak sampai melebihi CLV atau sebisa mungkin jauh lebih rendah dibanding CLV agar perusahaan mendapat profit maksimal.
+<br>
+
+## **6. Recommendation**
+---
+Beberapa hal yang dapat dilakukan untuk mengembangkan model agar lebih baik lagi yaitu:
+
+- Eksperimen menggunakan model machine learning lainnya yang belum digunakan pada project ini
+- Eksperimen dalam hyperparameter tuning lebih lanjut
+- Penambahan fitur lain yang behubungan dengan informasi polis customer, seperti informasi berapa bulan lamanya customer sudah menggunakan asuransi dari perusahaan ini.
+- Mengecek prediksi data mana saja yang menghasilkan nilai error tinggi. lalu melakukan analisa hubungan antara error tersebut dengan setiap variable independen dengan tujuan untuk mengetahui sebenarnya variable mana saja yang menyebabkan prediksi model menghasilkan error yang tinggi.
