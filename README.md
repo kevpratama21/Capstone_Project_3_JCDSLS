@@ -41,6 +41,7 @@ Evaluasi metrik yang akan digunakan yaitu:
 
 ## **2. Data Understanding**
 ---
+**2.1. Data Info**
 - Dataset yang digunakan berisi informasi customer dan informasi polis asuransi kendaraan mereka dari sejak awal menggunakan produk asuransi perusahaan auto insurance ini.
 - Setiap baris data merepresentasikan informasi terkait keterangan seorang customer dengan polis asuransi kendaraan miliknya.
 
@@ -62,7 +63,13 @@ Evaluasi metrik yang akan digunakan yaitu:
 
 <br>
 
-## **3. EDA**
+**2.2. EDA**
+---
+- Distribution
+- Descriptive Statistics
+- Correlation
+
+## **3. Data Preprocessing**
 ---
 - Distribution
 - Descriptive Statistics
