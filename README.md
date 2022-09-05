@@ -1,4 +1,4 @@
-# Capstone Project Module 3 JCDSLS - Kevin Pratama
+Capstone Project Module 3 JCDSLS - Kevin Pratama
 
 # Customer Lifetime Value
 <br>
@@ -37,3 +37,33 @@ Evaluasi metrik yang akan digunakan yaitu:
 - MAE adalah rataan nilai absolut dari error
 - MAPE adalah rataan nilai persentase error yang dihasilkan oleh model regresi
 - R-squared adalah nilai seberapa baik model dapat merepresentasikan varians keseluruhan data
+<br>
+
+## **2. Data Understanding**
+---
+- Dataset yang digunakan berisi informasi customer dan informasi polis asuransi kendaraan mereka dari sejak awal menggunakan produk asuransi perusahaan auto insurance ini.
+- Setiap baris data merepresentasikan informasi terkait keterangan seorang customer dengan polis asuransi kendaraan miliknya.
+
+**Attributes Information**
+
+| **Attribute** | **Data Type** | **Description** |
+| --- | --- | --- |
+| Vehicle Class             | Object    | Tipe kendaraan |
+| Coverage                  | Object    | Jenis pertanggungan polis asuransi customer |
+| Renew Offer Type          | Object    | Penawaran untuk pembaruan polis |
+| EmploymentStatus          | Object    | Status pekerjaan cutomer |
+| Marital Status            | Object    | Status pernikahan cutomer |
+| Education                 | Object    | Tingkat pendidikan customer |
+| Number of Policies        | Float     | Jumlah polis yang dimiliki customer |
+| Monthly Premium Auto      | Float     | Premi customer perbulan (USD) |
+| Total Claim Amount        | Float     | Jumlah claim customer (USD) |
+| Income                    | Float     | Pendapatan cutomer (USD) |
+| Customer Lifetime Value   | Float     | Customer Lifetime Value (Target) |
+
+<br>
+
+## **3. EDA**
+---
+- Distribution
+- Descriptive Statistics
+- Correlation
