@@ -1,4 +1,4 @@
-# Customer Lifetime Value
+# Customer Lifetime Value Prediction
 <br>
 
 ## **1. Business Problem Understanding**
