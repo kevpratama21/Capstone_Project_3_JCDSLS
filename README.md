@@ -1,5 +1,3 @@
-Capstone Project Module 3 JCDSLS - Kevin Pratama
-
 # Customer Lifetime Value
 <br>
 
